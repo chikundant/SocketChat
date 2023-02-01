@@ -24,6 +24,7 @@ class ChatServer:
 
     def __receive(self, client):
         try:
+
             while True:
                 data = client.recv(1024)
                 if client not in self.users:
